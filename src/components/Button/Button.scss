@@ -10,6 +10,10 @@ button[disabled]{
     padding: 8px;
     border: 0;
 }
+.c-button-themed {
+    color: $bg-floral-white;
+    background: $main-golden-yellow ;
+}
 .c-button-badge {
     min-width: 84px;
     border-radius: 16px;
@@ -18,10 +22,7 @@ button[disabled]{
     border-color: #CFCFCF; 
     color: $main-black;
 }
-.c-button-themed {
-    color: $bg-floral-white;
-    background: $main-golden-yellow ;
-}
+
 .c-button-large {
     height: 56px;
     width: 100%;
@@ -42,3 +43,4 @@ button[disabled]{
     background: transparent;
     font-size: $font-size-small
 }
+

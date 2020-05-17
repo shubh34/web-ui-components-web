@@ -40,10 +40,12 @@ const Icon = ({ name = '', className = '', isActive = false, iconSize }) => {
 	}[name] || null;
 	const css = classNames(
 		'c-icon',
-		`c-icon-${name}`,
+		{ 'c-icon--medium': iconSize === 'medium' },
 		{ 'c-icon--active': isActive },
 		{ 'c-icon--large': iconSize === 'large' },
-		{ 'c-icon--medium': iconSize === 'medium' },
+		`c-icon-${name}`,
+	
+		
 		className
 	);
 	return <div className={css}>{iconToRender}</div>;
