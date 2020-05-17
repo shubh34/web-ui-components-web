@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Badge = ({ id, className, value, name, checked, onChange }) => {
+const Badge = ({ className, name }) => {
 	const css = classNames('c-badge', className);
 	return <span id={name} className={css}>{name}</span>;
 };

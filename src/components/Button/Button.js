@@ -4,15 +4,15 @@ import './Button.scss';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Button = ({ id, className, onClick, name, disabled, children, type = 'button', themed = true, badge = false }) => {
+const Button = ({ id, className, onClick, name, disabled, children, type, themed = true, badge = false }) => {
 	const css = classNames(
 		'c-button',
+		{ 'c-button-themed': themed },
 		{ 'c-button-badge': badge },
 		{ 'c-button-large': type === 'large' },
 		{ 'c-button-medium': type === 'medium' },
 		{ 'c-button-link': type === 'link' },
-		{ 'c-button-themed': themed },
-		className
+		className,
 	);
 	return (
 		<button id={id} className={css} type='button' onClick={onClick} disabled={disabled}>
@@ -23,12 +23,12 @@ const Button = ({ id, className, onClick, name, disabled, children, type = 'butt
 };
 
 Button.propTypes = {
-	id: PropTypes.string,
+	id: PropTypes.string.isRequired,
 	disabled: PropTypes.bool,
 	className: PropTypes.string.isRequired,
 	onClick: PropTypes.func.isRequired,
-	name: PropTypes.string,
-	type: PropTypes.string,
+	name: PropTypes.string.isRequired,
+	type:  PropTypes.oneOf(['large', 'medium', 'link']),
 	children: PropTypes.element,
 	themed: PropTypes.bool,
 	badge: PropTypes.bool
