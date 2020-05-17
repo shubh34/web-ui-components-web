@@ -1,0 +1,34 @@
+@import "../../../scss/variables.scss";
+
+.c-profile {
+    position: relative;
+    .c-button-cross {
+        position: absolute;
+        right: -12px;
+        top: -12px;
+    }
+}
+.c-profile-large {
+    .c-profile-img {
+        height: 124px;
+        width: 124px;
+    }
+}
+.c-profile-small {
+    .c-profile-img {
+        height: 60px;
+        width: 60px;
+     }
+}
+.c-profile-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid;
+    object-fit: cover;
+    border-color: $main-golden-yellow;
+}
+
+.c-profile-button {
+    color: $main-white;
+}

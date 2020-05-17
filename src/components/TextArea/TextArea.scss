@@ -1,0 +1,15 @@
+.c-text-area {
+    width: 100%;
+    background: transparent;
+    border: none;
+    min-height: 140px;
+    border-bottom: 4px solid;
+    border-color: #CFCFCF;
+    font-size: 14px;
+    color: #808080;
+    line-height: 1.5;
+}
+.c-text-area_char_count {
+    float: right;
+    color: #808080;
+}

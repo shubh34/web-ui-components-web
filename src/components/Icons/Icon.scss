@@ -1,0 +1,38 @@
+@import "../../../scss/variables.scss";
+.c-icon {
+    padding: 4px;
+    svg {
+        fill: $main-svg-default,
+    }
+}
+
+.c-icon-mail {
+    svg {
+        height:14px;
+        width: 14px;
+    }
+}
+.c-icon-dotted-line {
+    padding: 0;
+    font-size: 0;
+}
+
+.c-icon--active {
+    svg {
+        fill: $main-golden-yellow;
+    }
+}
+.c-icon--large {
+    svg {
+        height: 48px;
+        width: 48px;
+    }  
+}
+.c-icon--medium {
+    svg {
+        height: 24px;
+        width: 24px;
+    }  
+}
+
+

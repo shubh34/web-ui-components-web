@@ -1,0 +1,30 @@
+@import "../../../scss/variables.scss";
+
+.input-container {
+    display: flex;
+    border-bottom: 2px solid;
+    border-color: $main-input-default;
+    padding-bottom: 4px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.input-container--active {
+    border-color: #d09a44;
+}
+.c-input {
+    font-size: $font-size-medium;
+    height: 28px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+> input::placeholder {
+    font-size: 12px;
+    color: grey;
+    font-weight: 500;
+    opacity: 30%;
+}

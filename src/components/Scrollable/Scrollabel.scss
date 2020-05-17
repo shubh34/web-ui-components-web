@@ -1,0 +1,11 @@
+.c-scrollable{
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+.c-scrollable-item {
+    min-width: 280px;
+    min-height: 180px;
+    padding-right: 8px;
+}

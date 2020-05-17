@@ -1,0 +1,12 @@
+@import "../../../scss/variables.scss";
+.c-online-now {
+    min-width: 100px;
+    border-radius: 24px;
+    border: 3px solid;
+    /* border-color: #808080; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d09a44;
+    border-color: #CFCFCF;
+}

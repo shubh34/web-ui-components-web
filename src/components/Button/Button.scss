@@ -1,0 +1,44 @@
+@import "../../scss/variables.scss";
+
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: $main-disable-color;;
+}
+.c-button {
+    padding: 8px;
+    border: 0;
+}
+.c-button-badge {
+    min-width: 84px;
+    border-radius: 16px;
+    background: transparent;
+    border: 2px solid;
+    border-color: #CFCFCF; 
+    color: $main-black;
+}
+.c-button-themed {
+    color: $bg-floral-white;
+    background: $main-golden-yellow ;
+}
+.c-button-large {
+    height: 56px;
+    width: 100%;
+    font-size: $font-size-medium;
+    font-weight: bold;
+}
+
+.c-button-medium {
+    height: 48px;
+    min-width: 48px;
+    font-size: $font-size-medium;
+}
+
+
+.c-button-link {
+    color: $main-golden-yellow;
+    border:0;
+    background: transparent;
+    font-size: $font-size-small
+}

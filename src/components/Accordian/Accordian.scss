@@ -1,0 +1,39 @@
+
+@import "../../../scss/variables.scss";
+
+.c-accordian {
+    padding: 16px;
+    background: #E6E6E6;
+    .c-accordian-chevron {
+        svg{
+            height: 24px;
+            width: 24px;
+            fill: $main-dark-brown;
+        }
+        transform: rotate(90deg);
+    }
+}
+.c-accordian--active {
+    .c-accordian-chevron {
+        transform: rotate(180deg);
+    }
+}
+.c-accordian-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: $main-dark-brown;
+    .c-accordian-count {
+        margin-left: auto;
+        color: $main-golden-yellow;
+    }
+}
+.c-accordian-panel {
+    padding: 8px;
+    color: #808080;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.c-accordian-secondary {
+    background: $bg-floral-white;
+}
