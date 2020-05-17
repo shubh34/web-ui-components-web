@@ -1,3 +1,5 @@
+@import "../../scss/variables.scss";
+
 .c-text-area {
     width: 100%;
     background: transparent;
@@ -12,4 +14,9 @@
 .c-text-area_char_count {
     float: right;
     color: #808080;
+}
+.c-text-area--error {
+    color: $main-error-color;
+    border-color: $main-error-color;
+    outline: none;
 }
