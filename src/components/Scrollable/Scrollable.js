@@ -1,5 +1,5 @@
 import React from 'react';
-import './Scrollabel.scss';
+import './Scrollable.scss';
 import PropTypes from 'prop-types';
 
 
