@@ -1,0 +1,46 @@
+.c-toggle-switch{
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 48px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #ccc;
+}
+
+/* The slider */
+.c-switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c-switch-slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  right:2px;
+  top: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.c-toggle-switch--checked {
+    background-color: #2196f3;
+  .c-switch-slider::before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+  }
+}

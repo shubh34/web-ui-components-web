@@ -4,11 +4,11 @@ import './Radio.scss';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Radio = ({ id, className, value, name, checked, onChange }) => {
+const Radio = ({ id, className, value, name, checked, onChange, disabled }) => {
 	const css = classNames('c-radio', className);
 	return (
 		<div className={css}>
-			<input type='radio' id={id} name={name} onChange={onChange} checked={checked} value={value} />
+			<input type='radio' id={id} name={name} onChange={onChange} checked={checked} value={value} disabled={disabled} />
 			<label htmlFor={name}>{name}</label>
 		</div>
 	);
@@ -17,6 +17,7 @@ const Radio = ({ id, className, value, name, checked, onChange }) => {
 Radio.propTypes = {
 	id: PropTypes.string,
 	checked: PropTypes.bool,
+	disabled: PropTypes.bool,
 	className: PropTypes.string.isRequired,
 	value: PropTypes.string || PropTypes.bool,
 	onChange: PropTypes.func.isRequired,

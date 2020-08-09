@@ -1,27 +1,26 @@
 import React from 'react';
-import Radio from './Radio.js';
+import ToggleSwitch from './ToggleSwitch.js';
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import { action } from '@storybook/addon-actions';
 
 export default { 
-  title: 'Radio',
-  component: Radio,
+  title: 'ToggleSwitch',
+  component: ToggleSwitch,
   decorators: [withKnobs],
   excludeStories: /.*Data$/,
 };
 export const Default = () => {
-  return <Radio
+  return <ToggleSwitch
     id={text('id', 'defaultRadio' )}
     className={text('className', '' )}
-    name={text('name', 'Radio Button' )}
+    name={text('name', 'Toggle Switch' )}
     checked={boolean('checked',  false )}
     onChange={action('button-click')}
-    disabled={boolean('disabled',  false )}
   />
 };
 
 export const Checked = () => {
-  return <Radio
+  return <ToggleSwitch
     id={text('id', 'defaultRadio' )}
     className={text('className', '' )}
     name={text('name', 'Radio Button' )}
