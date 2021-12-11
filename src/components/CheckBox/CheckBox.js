@@ -32,13 +32,5 @@ export const CheckBox = ({
   );
 };
 
-CheckBox.propTypes = {
-  id: PropTypes.string,
-  checked: PropTypes.bool,
-  className: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  name: PropTypes.string,
-};
 
 export default CheckBox;
