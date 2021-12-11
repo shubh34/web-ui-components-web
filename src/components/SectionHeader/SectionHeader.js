@@ -21,11 +21,5 @@ const SectionHeader = ({ header, iconName, isUnderLined = false, align }) => {
 	);
 };
 
-SectionHeader.propTypes = {
-	align: PropTypes.string,
-	header: PropTypes.string.isRequired,
-	iconName: PropTypes.string,
-	isUnderLined: PropTypes.bool
-};
 
 export default SectionHeader;

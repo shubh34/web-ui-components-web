@@ -16,17 +16,6 @@ const InputWithIcon = ({ id, className, iconName, placeholder, type = 'text', di
 	);
 };
 
-InputWithIcon.propTypes = {
-	id: PropTypes.string.isRequired,
-	className: PropTypes.string.isRequired,
-	placeholder: PropTypes.string,
-	onChange: PropTypes.func,
-	onBlur: PropTypes.func,
-	name: PropTypes.string,
-	disabled: PropTypes.bool,
-	type: PropTypes.string,
-	value: PropTypes.string,
-	iconName: PropTypes.string
-};
+
 
 export default InputWithIcon;

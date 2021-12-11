@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
 import "./ToggleSwitch.scss";
-import PropTypes from "prop-types";
+
 import classNames from "classnames";
 import CheckBox from "../CheckBox/CheckBox";
 
@@ -10,7 +10,7 @@ const ToggleSwitch = ({
   className,
   value,
   name,
-  checked= false,
+  checked = false,
   onChange,
   disabled,
 }) => {
@@ -32,13 +32,6 @@ const ToggleSwitch = ({
   );
 };
 
-ToggleSwitch.propTypes = {
-  id: PropTypes.string,
-  checked: PropTypes.bool,
-  className: PropTypes.string.isRequired,
-  value: PropTypes.string || PropTypes.bool,
-  onChange: PropTypes.func.isRequired,
-  name: PropTypes.string,
-};
+
 
 export default ToggleSwitch;

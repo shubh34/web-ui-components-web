@@ -14,14 +14,6 @@ const Radio = ({ id, className, value, name, checked, onChange, disabled }) => {
 	);
 };
 
-Radio.propTypes = {
-	id: PropTypes.string,
-	checked: PropTypes.bool,
-	disabled: PropTypes.bool,
-	className: PropTypes.string.isRequired,
-	value: PropTypes.string || PropTypes.bool,
-	onChange: PropTypes.func.isRequired,
-	name: PropTypes.string
-};
+
 
 export default Radio;
