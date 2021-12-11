@@ -51,10 +51,4 @@ const Icon = ({ name = '', className = '', isActive = false, iconSize }) => {
 	return <div className={css}>{iconToRender}</div>;
 };
 
-Icon.propTypes = {
-	name: PropTypes.string,
-	className: PropTypes.string,
-	isActive: PropTypes.bool,
-	iconSize: PropTypes.string
-};
 export default Icon;
