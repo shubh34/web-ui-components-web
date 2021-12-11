@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import './Icon.scss';
-import PropTypes from 'prop-types';
+
 import classNames from 'classnames';
 import { ReactComponent as IconChevron } from './chevron.svg';
 import { ReactComponent as IconCross } from './cross.svg';
@@ -20,7 +20,7 @@ import IconMail from './IconMail';
 import IconSuccess from './IconSuccess';
 
 const Icon = ({ name = '', className = '', isActive = false, iconSize }) => {
-	const iconToRender =		{
+	const iconToRender = {
 		user: <IconUser />,
 		'login-logo': <IconLoginLogo />,
 		'dotted-line': <IconDottedLine />,
@@ -44,8 +44,8 @@ const Icon = ({ name = '', className = '', isActive = false, iconSize }) => {
 		{ 'c-icon--active': isActive },
 		{ 'c-icon--large': iconSize === 'large' },
 		`c-icon-${name}`,
-	
-		
+
+
 		className
 	);
 	return <div className={css}>{iconToRender}</div>;

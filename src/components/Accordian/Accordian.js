@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import "../Button/Button.scss";
 import './Accordian.scss';
-import PropTypes from 'prop-types';
+
 import classNames from 'classnames';
 import Button from '../Button/Button';
 import Icon from '../Icons/Icon';
 
-const Accordian = ({ id, header, children, count, isSecondary, defaultActive=false }) => {
+const Accordian = ({ id, header, children, count, isSecondary, defaultActive = false }) => {
 	const [isActive, setActiveState] = useState(defaultActive);
 	const toggleAccordion = () => {
 		setActiveState(!isActive);
@@ -24,18 +24,10 @@ const Accordian = ({ id, header, children, count, isSecondary, defaultActive=fal
 				<div className="c-accordian-panel">
 					{children}
 				</div>
-			) }
+			)}
 		</div>
 	);
 };
 
-Accordian.propTypes = {
-	id: PropTypes.string.isRequired,
-	header: PropTypes.string.isRequired,
-	count: PropTypes.number,
-	isSecondary: PropTypes.bool,
-	defaultActive: PropTypes.bool,
-	children: PropTypes.node.isRequired
-};
 
 export default Accordian;

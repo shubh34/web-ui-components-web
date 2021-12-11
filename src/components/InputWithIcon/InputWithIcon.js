@@ -2,10 +2,10 @@
 import React from 'react';
 import './InputWithIcon.scss';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
+
 import Icon from '../Icons/Icon';
 
-const InputWithIcon = ({ id, className, iconName, placeholder, type = 'text', disabled, value = '', name = 'input', onBlur = () => {}, onChange = () => {} }) => {
+const InputWithIcon = ({ id, className, iconName, placeholder, type = 'text', disabled, value = '', name = 'input', onBlur = () => { }, onChange = () => { } }) => {
 	const isActive = value.length;
 	const css = classNames('input-container', { 'input-container--active': isActive }, className);
 	return (

@@ -1,7 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React from "react";
 import "./CheckBox.scss";
-import PropTypes from "prop-types";
 import classNames from "classnames";
 
 export const CheckBox = ({
@@ -33,13 +32,5 @@ export const CheckBox = ({
   );
 };
 
-CheckBox.propTypes = {
-  id: PropTypes.string,
-  checked: PropTypes.bool,
-  className: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  name: PropTypes.string,
-};
 
 export default CheckBox;
