@@ -16,6 +16,7 @@ export const Default = () => {
     name={text('name', 'Radio Button')}
     checked={boolean('checked', false)}
     onChange={action('button-click')}
+    disabled={boolean('disabled',  false )}
   />
 };
 
@@ -26,6 +27,7 @@ export const Checked = () => {
     name={text('name', 'Radio Button')}
     checked={boolean('checked', true)}
     onChange={action('button-click')}
+    disabled={boolean('disabled',  false )}
   />
 };
 
