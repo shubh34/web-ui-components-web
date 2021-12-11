@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import PropTypes from 'prop-types';
 import Button from '../Button/Button';
 
 const ChangePhoto = ({ onChange, hasProfile }) => {
@@ -17,10 +16,6 @@ const ChangePhoto = ({ onChange, hasProfile }) => {
 			<Button type="link" name={buttonName} id={buttonName} onClick={onButtonClick} />
 		</>
 	);
-};
-ChangePhoto.propTypes = {
-	onChange: PropTypes.func,
-	hasProfile: PropTypes.bool
 };
 
 export default ChangePhoto;

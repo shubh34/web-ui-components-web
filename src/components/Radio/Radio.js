@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import './Radio.scss';
-import PropTypes from 'prop-types';
+
 import classNames from 'classnames';
 
 const Radio = ({ id, className, value, name, checked, onChange }) => {

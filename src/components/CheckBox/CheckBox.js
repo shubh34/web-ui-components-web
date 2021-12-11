@@ -1,6 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import classNames from 'classnames';
 
 const CheckBox = ({ id, className, value, name, checked, onChange }) => {

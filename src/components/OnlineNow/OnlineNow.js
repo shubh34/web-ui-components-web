@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import './OnlineNow.scss'
-import PropTypes from 'prop-types';
+
 import classNames from 'classnames';
 import Icon from '../Icons/Icon';
 

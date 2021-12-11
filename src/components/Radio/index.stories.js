@@ -3,7 +3,7 @@ import Radio from './Radio.js';
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import { action } from '@storybook/addon-actions';
 
-export default { 
+export default {
   title: 'Radio',
   component: Radio,
   decorators: [withKnobs],
@@ -11,20 +11,20 @@ export default {
 };
 export const Default = () => {
   return <Radio
-    id={text('id', 'defaultRadio' )}
-    className={text('className', '' )}
-    name={text('name', 'Radio Button' )}
-    checked={boolean('checked',  false )}
+    id={text('id', 'defaultRadio')}
+    className={text('className', '')}
+    name={text('name', 'Radio Button')}
+    checked={boolean('checked', false)}
     onChange={action('button-click')}
   />
 };
 
 export const Checked = () => {
   return <Radio
-    id={text('id', 'defaultRadio' )}
-    className={text('className', '' )}
-    name={text('name', 'Radio Button' )}
-    checked={boolean('checked',  true )}
+    id={text('id', 'defaultRadio')}
+    className={text('className', '')}
+    name={text('name', 'Radio Button')}
+    checked={boolean('checked', true)}
     onChange={action('button-click')}
   />
 };
