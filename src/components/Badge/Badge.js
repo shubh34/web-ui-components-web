@@ -5,6 +5,7 @@ import classNames from 'classnames';
 
 const Badge = ({ className, name }) => {
 	const css = classNames('c-badge', className);
+	const a;
 	return <span id={name} className={css}>{name}</span>;
 };
 

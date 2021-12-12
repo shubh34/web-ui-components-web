@@ -23,7 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook --port 9090",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "esw ./src --color"
   },
   "eslintConfig": {
     "extends": "react-app"
