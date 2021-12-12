@@ -33,11 +33,5 @@ const Profile = ({ profile, type = 'medium', onCrossClick, isEditMode }) => {
 	);
 };
 
-Profile.propTypes = {
-	type: PropTypes.string,
-	profile: PropTypes.string,
-	onCrossClick: PropTypes.func,
-	isEditMode: PropTypes.bool
-};
 
 export default Profile;

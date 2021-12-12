@@ -6,11 +6,17 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
     "classnames": "^2.2.6",
+    "eslint-watch": "^8.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.4",
-    "sass": "^1.45.0"
+    "sass": "^1.45.0",
+    "typescript": "^4.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook --port 9090",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "esw ./src --color"
   },
   "eslintConfig": {
     "extends": "react-app"

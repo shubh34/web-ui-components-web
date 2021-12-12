@@ -15,11 +15,6 @@ const TabPane = ({ id, name, onClick, isActive }) => {
 	);
 };
 
-TabPane.propTypes = {
-	onClick: PropTypes.func.isRequired,
-	id: PropTypes.string.isRequired,
-	name: PropTypes.string.isRequired,
-	isActive: PropTypes.bool.isRequired
-};
+
 
 export default TabPane;
